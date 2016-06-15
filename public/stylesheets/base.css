@@ -1,0 +1,45 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2 !important;
+  color: #333;
+  font-family: "Open Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+  outline: none;
+}
+
+a:visited {
+  color: #337ab7;
+}
+a:active {
+  color: #337ab7;
+}
+a:hover {
+  color: #337ab7;
+}
+a .btn {
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.chatform { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+.chatform input { border: 0; padding: 10px; width: 90%; margin-right: .5%; }
+.chatform button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages li { padding: 5px 10px; }
+#messages li:nth-child(odd) { background: #eee; }

@@ -1,0 +1,27 @@
+header
+  nav.navbar.navbar-default.navbar-fixed-top
+    div.container-fluid
+      div.navbar-inner
+        div.navbar-header
+          button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1", aria-expanded="false")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          h1.logo
+            a.navbar-brand(href="/") Pocket Therapist
+
+        div#bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            if sessionUser == null
+              // ログインしていない
+              li
+                a(href="/reception") 新規登録
+              li
+                a(href="/login") ログイン
+            else
+              // ログイン済み
+              li
+                p=sessionUser.name
+              li
+                a(href="/logout") ログアウト
